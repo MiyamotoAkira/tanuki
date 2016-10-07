@@ -15,16 +15,15 @@
 # Improvements
 # Provide a search option, maybe through a query parameter? or should be a sub resource?
 
-from requests import requests
+import requests
+import unittest
 
+class TestCreationPaths(unittest.TestCase):
+    def test_happy_creation_path(self):
+        r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+        self.assertEqual(r.status_code,200)
+        self.assertEqual(r.headers['content-type'], 'application/json; charset=utf8')
+        self.assertEqual(r.encoding, 'utf-8')
+        #r.text
 
-r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
-r.status_code
-200
-r.headers['content-type']
-'application/json; charset=utf8'
-r.encoding
-'utf-8'
-r.text
-
-r.json()
+        #r.json()
