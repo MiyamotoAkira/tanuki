@@ -5,7 +5,7 @@ This is a feature toggling application. The idea is to have a rest api system, t
 
 ## Why the name?
 
-Tanuki is a japanese racoon dog. In Japanese folklore he has shapeshifting capabilities.
+Tanuki is a japanese racoon dog. In Japanese folklore Tanukis has shapeshifting capabilities.
 
 ## Motivation.
 
