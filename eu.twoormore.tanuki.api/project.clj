@@ -6,7 +6,7 @@
   :plugins [[cider/cider-nrepl "0.13.0"]
             [lein-ring "0.9.7"]
             [refactor-nrepl "2.2.0"]]
-  :ring {:handler appointment.handler/handlers
+  :ring {:handler eu.twoormore.tanuki.api.handler/handlers
          :nrepl {:start? true}}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [liberator "0.14.1"]
